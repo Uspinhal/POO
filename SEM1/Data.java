@@ -1,3 +1,5 @@
+package SEM1;
+
 public class Data {
 
     private int dia;
