@@ -33,6 +33,21 @@ public class Casa implements EmissorCarbono{
     public int getNumeroPessoas() {
         return numeroPessoas;
     }
+    public void setConsumoMensalEnergiaReal(double consumoMensalEnergiaReal) {
+        this.consumoMensalEnergiaReal = consumoMensalEnergiaReal;
+    }
+    public void setConsumoMensalEnergiakWh(double consumoMensalEnergiakWh) {
+        this.consumoMensalEnergiakWh = consumoMensalEnergiakWh;
+    }
+    public void setConsumoMensalGasReal(double consumoMensalGasReal) {
+        this.consumoMensalGasReal = consumoMensalGasReal;
+    }
+    public void setConsumoMensalGasBotijao(double consumoMensalGasBotijao) {
+        this.consumoMensalGasBotijao = consumoMensalGasBotijao;
+    }
+    public void setNumeroPessoas(int numeroPessoas) {
+        this.numeroPessoas = numeroPessoas;
+    }
 
 // Outros Métodos
     public double getCarbonoEmitido() {
