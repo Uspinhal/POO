@@ -1,12 +1,13 @@
 package SEM3;
 
 import SEM3.Carbono.Casa;
+import SEM3.Carbono.EmissorCarbono;
 
 public class TesteCarbono {
     public static void main(String[] args) {
-        Casa casa = new Casa(1,2,3,4,5);
+        EmissorCarbono casa = new Casa(1,2,3,4,5);
 
-        System.out.println(casa.getNumeroPessoas());
-        System.out.println(casa.getCarbonoEmitido());
+        System.out.println();
+        System.out.println(casa);
     }
 }

@@ -50,6 +50,12 @@ public class Casa implements EmissorCarbono{
     }
 
 // Outros Métodos
+    @Override
+    public String toString() {
+        return "Casa: ConsumoEnergia: R$"+ this.getConsumoMensalEnergiaReal() + " kWh: "+this.getConsumoMensalEnergiakWh() +
+            " | ConsumoGas: R$"+ this.consumoMensalGasReal + " Botijão: " + this.getConsumoMensalGasBotijao() +
+            " | NúmeroPessoas:" + this.getNumeroPessoas();
+    }
     public double getCarbonoEmitido() {
         return 1;
     }
