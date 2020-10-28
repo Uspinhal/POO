@@ -21,8 +21,24 @@ public class Carro implements EmissorCarbono {
     public double getKilometragem() {
         return kilometragem;
     }
+
+    public void setCombustivel(String combustivel) {
+        this.combustivel = combustivel;
+    }
+    public void setMotor(String motor) {
+        this.motor = motor;
+    }
+    public void setKilometragem(Double kilometragem) {
+        this.kilometragem = kilometragem;
+    }
 // Outros Métodos
     public double getCarbonoEmitido() {
         return 2;
+    }
+
+    @Override
+    public String toString() {
+        return "Carro: " + "Combustível: " + this.getCombustivel()+" | Motor: " + this.getMotor() + 
+            " | km: " + this.getKilometragem();
     }
 }
