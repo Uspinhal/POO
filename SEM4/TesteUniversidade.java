@@ -1,7 +1,6 @@
 package SEM4;
 
 import java.util.*;
-
 import SEM4.Univesidade.*;
 
 public class TesteUniversidade {
