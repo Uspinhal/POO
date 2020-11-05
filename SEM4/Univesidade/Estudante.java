@@ -1,6 +1,6 @@
 package SEM4.Univesidade;
 
-public class Estudante implements Comparable{
+public class Estudante implements Comparable<Estudante>{
     private Integer id;
     private String nome;
     private Double nota;    
@@ -36,8 +36,8 @@ public class Estudante implements Comparable{
         return getId()+ ": "+ getNome() + " Nota:" + getNota();
     }
     @Override
-    public int compareTo(Object o) {
-        return Double.compare(this.nota, ((Estudante)o).nota);
+    public int compareTo(Estudante o) {
+        return Double.compare(this.nota, o.nota);
     }
 
 }
