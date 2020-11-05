@@ -3,6 +3,7 @@ package SEM4.Univesidade;
 import java.util.*;
 
 public class Turma {
+
     private List<Estudante> estudantes;
     private Double mediaTurma;
 
@@ -35,4 +36,23 @@ public class Turma {
         }
         this.mediaTurma = soma/estudantes.size();
     }
+    public Estudante maiorNota() {
+        return Collections.max(estudantes);
+    }
+    public List<Estudante> listaAprovados() {
+        List<Estudante> aprovados = new LinkedList<>();
+        for (Estudante estudante : estudantes) {
+            if (estudante.getNota()>=5.0) {
+                aprovados.add(estudante);
+            }
+        }
+        return aprovados;
+    }
+    public void juntaTurma(Turma t2) {
+        estudantes.addAll(t2.getEstudantes());
+        this.calculaMedia();
+        t2.getEstudantes().clear();
+        t2.mediaTurma = 0.0;
+    }
+
 }
