@@ -1,5 +1,6 @@
 package SEM5;
 
+
 import SEM4.Univesidade.*;
 
 public class Teste {
@@ -9,14 +10,14 @@ public class Teste {
         Estudante e3 = new Estudante(123, "Han", 4.5);
         Estudante e4 = new Estudante(789, "Chewie", 3.0);
 
-        Comparable[] vec=new Estudante[4];
+        Estudante[] vec=new Estudante[4];
         vec[0]=e1;
         vec[1]=e2;
         vec[2]=e3;
         vec[3]=e4;
         ordenarSelecao(vec, vec.length);
-        for (Comparable comparable : vec) {
-            System.out.println(comparable);
+        for (Estudante e : vec) {
+            System.out.println(e);
         }
     }
     public static <T extends Comparable<T>> void ordenarSelecao(T[] vec, int n) {
