@@ -15,5 +15,8 @@ public class Teste {
 
         circ.setRaio(2.0);
         System.out.println("Área do circulo: " + circ.getArea());
+
+        Triangle tri = new Triangle(3.0, 4.0, 5.0);
+        System.out.println("Área do triângulo: " + tri.getArea());
     }
 }
